@@ -79,11 +79,10 @@ async def _validate_credentials(
     return None
 
 
-class IntellipoolConfigFlow(config_entries.ConfigFlow):
+class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     """Handle a config flow for Pentair Intellipool."""
 
     VERSION = 1
-    domain = DOMAIN  # Explicitly declare domain for HA versions expecting a class attribute.
 
     @staticmethod
     def async_get_options_flow(

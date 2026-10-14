@@ -1,0 +1,51 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Pentair Intellipool",
+        "description": "Connect to your Pentair Intellipool installation.",
+        "data": {
+          "install_id": "Installation ID",
+          "api_key": "API key"
+        },
+        "data_description": {
+          "install_id": "Your Intellipool installation identifier.",
+          "api_key": "The API key for this Intellipool installation."
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reauthenticate Pentair Intellipool",
+        "description": "Enter a new API key for your Pentair Intellipool installation.",
+        "data": {
+          "api_key": "API key"
+        },
+        "data_description": {
+          "api_key": "The updated API key for this Intellipool installation."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to Intellipool.",
+      "invalid_auth": "Invalid installation ID or API key.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This Intellipool installation is already configured.",
+      "reauth_successful": "Reauthentication was successful."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Pentair Intellipool options",
+        "description": "Configure how often Intellipool data is refreshed.",
+        "data": {
+          "scan_interval": "Scan interval"
+        },
+        "data_description": {
+          "scan_interval": "Polling interval in seconds."
+        }
+      }
+    }
+  }
+}
